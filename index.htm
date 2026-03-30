@@ -64,7 +64,6 @@
             transition: background 0.3s, color 0.3s;
         }
 
-        /* Header */
         .main-header {
             position: fixed;
             top: 0;
@@ -176,7 +175,6 @@
             border-color: var(--accent-blue);
         }
 
-        /* Hero Section */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -213,84 +211,6 @@
             font-weight: 300;
         }
 
-        /* Counter - Moved below story */
-        .counter-section {
-            margin: 40px 0;
-            padding: 30px;
-            background: var(--panel);
-            border: 1px solid var(--line);
-            border-radius: var(--radius);
-            display: inline-block;
-            min-width: 280px;
-        }
-
-        .counter-label {
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 0.2em;
-            color: var(--accent-silver);
-            margin-bottom: 10px;
-        }
-
-        .counter-number {
-            font-family: 'Outfit', sans-serif;
-            font-size: 3.5rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, var(--text) 0%, var(--accent-silver) 50%, var(--accent-blue-light) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            line-height: 1;
-        }
-
-        .counter-suffix {
-            font-size: 1rem;
-            color: var(--text-muted);
-            margin-top: 8px;
-        }
-
-        /* Story Card */
-        .story-card {
-            background: var(--panel);
-            border: 1px solid var(--line);
-            border-radius: var(--radius);
-            padding: 35px;
-            margin: 30px auto;
-            max-width: 700px;
-            text-align: left;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .story-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 4px;
-            height: 100%;
-            background: linear-gradient(180deg, var(--accent-blue), var(--accent-silver));
-        }
-
-        .story-card h3 {
-            font-size: 1.4rem;
-            margin-bottom: 15px;
-            color: var(--accent-silver-light);
-        }
-
-        .story-card p {
-            color: var(--text-muted);
-            line-height: 1.8;
-            margin-bottom: 12px;
-            font-size: 0.95rem;
-        }
-
-        .story-card strong {
-            color: var(--text);
-            font-weight: 600;
-        }
-
-        /* Compact Values Grid */
         .values-section {
             margin: 50px 0;
         }
@@ -358,7 +278,6 @@
             }
         }
 
-        /* CTA Button */
         .cta-button {
             display: inline-flex;
             align-items: center;
@@ -382,7 +301,6 @@
             box-shadow: 0 20px 40px rgba(124, 58, 237, 0.4);
         }
 
-        /* Sections */
         .section {
             padding: 80px 20px;
             max-width: 1200px;
@@ -403,7 +321,6 @@
             color: var(--text-muted);
         }
 
-        /* Catalog */
         .catalog-section {
             background: var(--bg-2);
         }
@@ -460,7 +377,6 @@
             border-color: var(--accent-blue);
         }
 
-        /* Cards */
         .cards-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -489,101 +405,24 @@
         }
 
         .service-logo {
-            width: 50px;
-            height: 50px;
+            width: 52px;
+            height: 52px;
             border-radius: 14px;
-            background: var(--bg-3);
+            background: #ffffff;
             border: 1px solid var(--line);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: 700;
-            font-size: 1rem;
             flex-shrink: 0;
+            overflow: hidden;
+            padding: 8px;
         }
 
-        .service-logo.netflix {
-            color: #e50914;
-        }
-
-        .service-logo.disney {
-            color: #113ccf;
-        }
-
-        .service-logo.prime {
-            color: #00a8e1;
-        }
-
-        .service-logo.max {
-            color: #002be7;
-        }
-
-        .service-logo.paramount {
-            color: #0064ff;
-        }
-
-        .service-logo.vix {
-            color: #ff6b00;
-        }
-
-        .service-logo.apple {
-            color: var(--text);
-        }
-
-        .service-logo.universal {
-            color: #c9a227;
-        }
-
-        .service-logo.mubi {
-            color: #00e676;
-        }
-
-        .service-logo.crunchy {
-            color: #f47521;
-        }
-
-        .service-logo.flujo {
-            color: #ff4081;
-        }
-
-        .service-logo.spotify {
-            color: #1db954;
-        }
-
-        .service-logo.deezer {
-            color: #ff0092;
-        }
-
-        .service-logo.youtube {
-            color: #ff0000;
-        }
-
-        .service-logo.xbox {
-            color: #107c10;
-        }
-
-        .service-logo.internet {
-            color: #00d4aa;
-        }
-
-        .service-logo.capcut {
-            color: #00c8ff;
-        }
-
-        .service-logo.canva {
-            color: #00c4cc;
-        }
-
-        .service-logo.adobe {
-            color: #ff0000;
-        }
-
-        .service-logo.microsoft {
-            color: #00a4ef;
-        }
-
-        .service-logo.picsart {
-            color: #c209c1;
+        .service-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
         }
 
         .card-title h3 {
@@ -615,7 +454,6 @@
             line-height: 1.5;
         }
 
-        /* Name Input */
         .name-box {
             background: var(--panel);
             border: 1px solid var(--line);
@@ -667,7 +505,6 @@
             color: #ef4444;
         }
 
-        /* Summary Bar */
         .summary-bar {
             position: fixed;
             bottom: 80px;
@@ -777,6 +614,7 @@
             padding: 8px 0;
             font-size: 0.9rem;
             border-bottom: 1px solid var(--line);
+            gap: 12px;
         }
 
         .details-list li:last-child {
@@ -790,7 +628,6 @@
             font-size: 0.9rem;
         }
 
-        /* WhatsApp Button */
         .whatsapp-btn {
             position: fixed;
             bottom: 20px;
@@ -821,7 +658,6 @@
             box-shadow: 0 15px 40px rgba(37, 211, 102, 0.4);
         }
 
-        /* FAQ */
         .faq-section {
             background: var(--bg);
         }
@@ -887,7 +723,6 @@
             color: var(--text);
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
             .header-nav {
                 gap: 15px;
@@ -905,14 +740,6 @@
                 padding: 100px 20px 40px;
             }
 
-            .counter-number {
-                font-size: 2.5rem;
-            }
-
-            .story-card {
-                padding: 25px;
-            }
-
             .section {
                 padding: 60px 20px;
             }
@@ -920,12 +747,21 @@
             .cards-grid {
                 grid-template-columns: 1fr;
             }
+
+            .summary-main {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .summary-totals {
+                justify-content: space-between;
+                gap: 10px;
+            }
         }
     </style>
 </head>
 
 <body>
-    <!-- Header -->
     <header class="main-header" id="mainHeader">
         <div class="header-content">
             <a href="#inicio" class="header-brand" onclick="scrollToSection('inicio')">
@@ -943,7 +779,6 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero" id="inicio">
         <div class="hero-content">
             <h1 class="hero-title">
@@ -954,7 +789,6 @@
                 Desde julio de 2023 cuidando tu economía.
             </p>
 
-            <!-- Compact Values -->
             <div class="values-section">
                 <div class="values-grid">
                     <div class="value-item">
@@ -989,7 +823,6 @@
         </div>
     </section>
 
-    <!-- Catalog Section -->
     <section class="section catalog-section" id="catalogo">
         <div class="section-header">
             <h2>Catálogo de Servicios</h2>
@@ -1018,13 +851,13 @@
             </div>
         </div>
 
-        <!-- Streaming -->
         <div class="category-section" id="streaming">
             <h3 style="margin-bottom: 20px; font-size: 1.3rem;">🎬 Streaming</h3>
             <div class="cards-grid">
+
                 <article class="service-card">
                     <div class="card-header">
-                        <div class="service-logo netflix">N</div>
+                        <div class="service-logo"><img src="https://www.google.com/s2/favicons?domain=netflix.com&sz=128" alt="Netflix"></div>
                         <div class="card-title">
                             <h3>Netflix</h3>
                             <p>Perfiles disponibles</p>
@@ -1041,7 +874,7 @@
 
                 <article class="service-card">
                     <div class="card-header">
-                        <div class="service-logo disney">D+</div>
+                        <div class="service-logo"><img src="https://www.google.com/s2/favicons?domain=disneyplus.com&sz=128" alt="Disney+"></div>
                         <div class="card-title">
                             <h3>Disney+</h3>
                             <p>Perfiles disponibles</p>
@@ -1058,7 +891,7 @@
 
                 <article class="service-card">
                     <div class="card-header">
-                        <div class="service-logo prime">P</div>
+                        <div class="service-logo"><img src="https://www.google.com/s2/favicons?domain=primevideo.com&sz=128" alt="Prime Video"></div>
                         <div class="card-title">
                             <h3>Prime Video</h3>
                             <p>Perfiles disponibles</p>
@@ -1075,7 +908,7 @@
 
                 <article class="service-card">
                     <div class="card-header">
-                        <div class="service-logo max">MAX</div>
+                        <div class="service-logo"><img src="https://www.google.com/s2/favicons?domain=max.com&sz=128" alt="Max"></div>
                         <div class="card-title">
                             <h3>Max</h3>
                             <p>Perfiles disponibles</p>
@@ -1092,7 +925,7 @@
 
                 <article class="service-card">
                     <div class="card-header">
-                        <div class="service-logo paramount">P+</div>
+                        <div class="service-logo"><img src="https://www.google.com/s2/favicons?domain=paramountplus.com&sz=128" alt="Paramount+"></div>
                         <div class="card-title">
                             <h3>Paramount+</h3>
                             <p>Perfiles disponibles</p>
@@ -1109,7 +942,7 @@
 
                 <article class="service-card">
                     <div class="card-header">
-                        <div class="service-logo vix">VIX</div>
+                        <div class="service-logo"><img src="https://www.google.com/s2/favicons?domain=vix.com&sz=128" alt="Vix Premium"></div>
                         <div class="card-title">
                             <h3>Vix Premium</h3>
                             <p>Perfiles disponibles</p>
@@ -1126,7 +959,7 @@
 
                 <article class="service-card">
                     <div class="card-header">
-                        <div class="service-logo apple">TV+</div>
+                        <div class="service-logo"><img src="https://www.google.com/s2/favicons?domain=tv.apple.com&sz=128" alt="Apple TV+"></div>
                         <div class="card-title">
                             <h3>Apple TV+</h3>
                             <p>Perfiles disponibles</p>
@@ -1143,7 +976,7 @@
 
                 <article class="service-card">
                     <div class="card-header">
-                        <div class="service-logo universal">U+</div>
+                        <div class="service-logo"><img src="https://www.google.com/s2/favicons?domain=universalplus.com&sz=128" alt="Universal+"></div>
                         <div class="card-title">
                             <h3>Universal+</h3>
                             <p>Perfiles disponibles</p>
@@ -1160,7 +993,7 @@
 
                 <article class="service-card">
                     <div class="card-header">
-                        <div class="service-logo mubi">M</div>
+                        <div class="service-logo"><img src="https://www.google.com/s2/favicons?domain=mubi.com&sz=128" alt="MUBI Premium"></div>
                         <div class="card-title">
                             <h3>MUBI Premium</h3>
                             <p>Perfiles disponibles</p>
@@ -1177,7 +1010,7 @@
 
                 <article class="service-card">
                     <div class="card-header">
-                        <div class="service-logo crunchy">CR</div>
+                        <div class="service-logo"><img src="https://www.google.com/s2/favicons?domain=crunchyroll.com&sz=128" alt="Crunchyroll"></div>
                         <div class="card-title">
                             <h3>Crunchyroll</h3>
                             <p>Perfiles disponibles</p>
@@ -1194,7 +1027,7 @@
 
                 <article class="service-card">
                     <div class="card-header">
-                        <div class="service-logo flujo">TV</div>
+                        <div class="service-logo"><img src="https://www.google.com/s2/favicons?domain=flow.com.ar&sz=128" alt="Flujo TV"></div>
                         <div class="card-title">
                             <h3>Flujo TV</h3>
                             <p>Dispositivos disponibles</p>
@@ -1207,16 +1040,17 @@
                     </select>
                     <p class="card-note">Televisión online, canales en vivo.</p>
                 </article>
+
             </div>
         </div>
 
-        <!-- Música -->
         <div class="category-section" id="musica" style="margin-top: 50px;">
             <h3 style="margin-bottom: 20px; font-size: 1.3rem;">🎵 Música</h3>
             <div class="cards-grid">
+
                 <article class="service-card">
                     <div class="card-header">
-                        <div class="service-logo spotify">SP</div>
+                        <div class="service-logo"><img src="https://www.google.com/s2/favicons?domain=spotify.com&sz=128" alt="Spotify Premium"></div>
                         <div class="card-title">
                             <h3>Spotify Premium</h3>
                             <p>Planes disponibles</p>
@@ -1232,7 +1066,7 @@
 
                 <article class="service-card">
                     <div class="card-header">
-                        <div class="service-logo deezer">DZ</div>
+                        <div class="service-logo"><img src="https://www.google.com/s2/favicons?domain=deezer.com&sz=128" alt="Deezer Premium"></div>
                         <div class="card-title">
                             <h3>Deezer Premium</h3>
                             <p>Planes disponibles</p>
@@ -1248,7 +1082,7 @@
 
                 <article class="service-card">
                     <div class="card-header">
-                        <div class="service-logo youtube">YT</div>
+                        <div class="service-logo"><img src="https://www.google.com/s2/favicons?domain=youtube.com&sz=128" alt="YouTube Premium"></div>
                         <div class="card-title">
                             <h3>YouTube Premium</h3>
                             <p>Planes disponibles</p>
@@ -1262,16 +1096,17 @@
                     </select>
                     <p class="card-note">YouTube sin anuncios, YouTube Music.</p>
                 </article>
+
             </div>
         </div>
 
-        <!-- Gaming -->
         <div class="category-section" id="gaming" style="margin-top: 50px;">
             <h3 style="margin-bottom: 20px; font-size: 1.3rem;">🎮 Gaming</h3>
             <div class="cards-grid">
+
                 <article class="service-card">
                     <div class="card-header">
-                        <div class="service-logo xbox">XB</div>
+                        <div class="service-logo"><img src="https://www.google.com/s2/favicons?domain=xbox.com&sz=128" alt="Xbox Game Pass Ultimate"></div>
                         <div class="card-title">
                             <h3>Xbox Game Pass Ultimate</h3>
                             <p>Planes disponibles</p>
@@ -1285,16 +1120,17 @@
                     </select>
                     <p class="card-note">Biblioteca de juegos Xbox y PC, online.</p>
                 </article>
+
             </div>
         </div>
 
-        <!-- Internet -->
         <div class="category-section" id="internet" style="margin-top: 50px;">
             <h3 style="margin-bottom: 20px; font-size: 1.3rem;">🌐 Internet</h3>
             <div class="cards-grid">
+
                 <article class="service-card">
                     <div class="card-header">
-                        <div class="service-logo internet">NET</div>
+                        <div class="service-logo"><img src="https://www.google.com/s2/favicons?domain=personal.com.ar&sz=128" alt="Internet Ilimitado Argentina"></div>
                         <div class="card-title">
                             <h3>Internet Ilimitado Argentina</h3>
                             <p>Planes disponibles</p>
@@ -1308,16 +1144,17 @@
                     </select>
                     <p class="card-note">Servicio para líneas Personal en Argentina.</p>
                 </article>
+
             </div>
         </div>
 
-        <!-- Software -->
         <div class="category-section" id="software" style="margin-top: 50px;">
             <h3 style="margin-bottom: 20px; font-size: 1.3rem;">🧰 Software</h3>
             <div class="cards-grid">
+
                 <article class="service-card">
                     <div class="card-header">
-                        <div class="service-logo capcut">CC</div>
+                        <div class="service-logo"><img src="https://www.google.com/s2/favicons?domain=capcut.com&sz=128" alt="CapCut Pro"></div>
                         <div class="card-title">
                             <h3>CapCut Pro</h3>
                             <p>Planes disponibles</p>
@@ -1334,7 +1171,7 @@
 
                 <article class="service-card">
                     <div class="card-header">
-                        <div class="service-logo canva">CV</div>
+                        <div class="service-logo"><img src="https://www.google.com/s2/favicons?domain=canva.com&sz=128" alt="Canva Pro"></div>
                         <div class="card-title">
                             <h3>Canva Pro</h3>
                             <p>Planes disponibles</p>
@@ -1351,7 +1188,7 @@
 
                 <article class="service-card">
                     <div class="card-header">
-                        <div class="service-logo adobe">ADB</div>
+                        <div class="service-logo"><img src="https://www.google.com/s2/favicons?domain=adobe.com&sz=128" alt="Adobe Creative Cloud"></div>
                         <div class="card-title">
                             <h3>Adobe Creative Cloud</h3>
                             <p>Planes disponibles</p>
@@ -1367,7 +1204,7 @@
 
                 <article class="service-card">
                     <div class="card-header">
-                        <div class="service-logo microsoft">M365</div>
+                        <div class="service-logo"><img src="https://www.google.com/s2/favicons?domain=microsoft.com&sz=128" alt="Microsoft 365"></div>
                         <div class="card-title">
                             <h3>Microsoft 365</h3>
                             <p>Planes disponibles</p>
@@ -1383,7 +1220,7 @@
 
                 <article class="service-card">
                     <div class="card-header">
-                        <div class="service-logo picsart">PA</div>
+                        <div class="service-logo"><img src="https://www.google.com/s2/favicons?domain=picsart.com&sz=128" alt="PicsArt Premium"></div>
                         <div class="card-title">
                             <h3>PicsArt Premium</h3>
                             <p>Planes disponibles</p>
@@ -1396,11 +1233,11 @@
                     </select>
                     <p class="card-note">Edición premium de fotos y diseños.</p>
                 </article>
+
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
     <section class="section faq-section" id="faq">
         <div class="section-header">
             <h2>Preguntas Frecuentes</h2>
@@ -1453,7 +1290,6 @@
         </div>
     </section>
 
-    <!-- Summary Bar -->
     <div class="summary-bar" id="summaryBar">
         <div class="summary-main">
             <div class="summary-totals">
@@ -1476,7 +1312,6 @@
         </div>
     </div>
 
-    <!-- WhatsApp Button -->
     <a href="https://wa.me/5492645082293" class="whatsapp-btn" id="whatsappBtn" target="_blank">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
@@ -1485,7 +1320,6 @@
     </a>
 
     <script>
-        // Theme Toggle
         function toggleTheme() {
             const html = document.documentElement;
             const btn = document.getElementById('themeBtn');
@@ -1496,53 +1330,26 @@
             localStorage.setItem('theme', next);
         }
 
-        // Load saved theme
         const savedTheme = localStorage.getItem('theme') || 'dark';
         document.documentElement.setAttribute('data-theme', savedTheme);
         document.getElementById('themeBtn').textContent = savedTheme === 'light' ? '🌙' : '☀️';
 
-        // Counter Animation
-        function animateCounter() {
-            const counter = document.getElementById('clientCounter');
-            if (!counter) return;
-
-            const target = 1357;
-            const start = 1212;
-            const duration = 2500;
-            const startTime = performance.now();
-
-            function update(currentTime) {
-                const elapsed = currentTime - startTime;
-                const progress = Math.min(elapsed / duration, 1);
-                const easeOut = 1 - Math.pow(1 - progress, 3);
-                const current = Math.floor(start + (target - start) * easeOut);
-                counter.textContent = current.toLocaleString();
-                if (progress < 1) requestAnimationFrame(update);
-            }
-            requestAnimationFrame(update);
-        }
-        window.addEventListener('load', animateCounter);
-
-        // Smooth Scroll
         function scrollToSection(id) {
             const element = document.getElementById(id);
             if (!element) return;
-
-            element.scrollIntoView({
-                behavior: 'smooth'
-            });
+            element.scrollIntoView({ behavior: 'smooth' });
             updateActiveNav(id);
         }
 
-        // Update active nav
         function updateActiveNav(id) {
             document.querySelectorAll('.nav-link').forEach(link => {
                 link.classList.remove('active');
-                if (link.getAttribute('href') === '#' + id) link.classList.add('active');
+                if (link.getAttribute('href') === '#' + id) {
+                    link.classList.add('active');
+                }
             });
         }
 
-        // Header scroll effect
         window.addEventListener('scroll', () => {
             const header = document.getElementById('mainHeader');
             if (window.scrollY > 100) header.classList.add('scrolled');
@@ -1558,7 +1365,6 @@
             });
         });
 
-        // Toggle Details
         let detailsOpen = false;
 
         function toggleDetails() {
@@ -1570,7 +1376,6 @@
             btn.innerHTML = detailsOpen ? 'Ocultar' : 'Ver detalle';
         }
 
-        // FAQ Accordion
         document.querySelectorAll('.faq-question').forEach(btn => {
             btn.addEventListener('click', () => {
                 const item = btn.parentElement;
@@ -1580,7 +1385,6 @@
             });
         });
 
-        // Filter Category
         function filterCategory(event, cat) {
             event.preventDefault();
             document.querySelectorAll('.category-pill').forEach(p => p.classList.remove('active'));
@@ -1591,7 +1395,6 @@
             });
         }
 
-        // Catalog Logic
         const countrySelect = document.getElementById('countrySelect');
         const planSelects = document.querySelectorAll('.plan-select');
         const customerName = document.getElementById('customerName');
@@ -1686,12 +1489,15 @@
                 list.innerHTML = '<li class="empty-msg">No seleccionaste servicios</li>';
             } else {
                 list.innerHTML = items.map(i => `
-          <li><span>${i.service} - ${i.plan}</span><span>${formatMoney(cur, i.amount)}</span></li>
-        `).join('');
+                    <li><span>${i.service} - ${i.plan}</span><span>${formatMoney(cur, i.amount)}</span></li>
+                `).join('');
                 if (discount > 0) {
-                    list.innerHTML += `<li style="color: var(--success); margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--line);">
-            <span>Descuento combo (${discount}%)</span><span>-${formatMoney(cur, discountAmt)}</span>
-          </li>`;
+                    list.innerHTML += `
+                        <li style="color: var(--success); margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--line);">
+                            <span>Descuento combo (${discount}%)</span>
+                            <span>-${formatMoney(cur, discountAmt)}</span>
+                        </li>
+                    `;
                 }
             }
 
@@ -1705,8 +1511,11 @@
             else lines.push('Hola.');
             lines.push('Quiero contratar:');
 
-            if (items.length === 0) lines.push('- Aún no seleccioné servicios, quiero información.');
-            else items.forEach(i => lines.push(`- ${i.service} (${i.plan})`));
+            if (items.length === 0) {
+                lines.push('- Aún no seleccioné servicios, quiero información.');
+            } else {
+                items.forEach(i => lines.push(`- ${i.service} (${i.plan})`));
+            }
 
             lines.push('');
             lines.push(`Subtotal: ${formatMoney(cur, sub)}`);
@@ -1715,12 +1524,13 @@
             lines.push('');
             lines.push('¿Cómo sigo para pagar?');
 
-            document.getElementById('whatsappBtn').href = `https://wa.me/5492645082293?text=${encodeURIComponent(lines.join('\n'))}`;
+            document.getElementById('whatsappBtn').href =
+                `https://wa.me/5492645082293?text=${encodeURIComponent(lines.join('\n'))}`;
         }
 
-        // Events
         countrySelect.addEventListener('change', updateLabels);
         planSelects.forEach(s => s.addEventListener('change', calculate));
+
         customerName.addEventListener('input', () => {
             const name = customerName.value.trim();
             nameStatus.textContent = name ? '✓ Nombre cargado' : '';
@@ -1740,7 +1550,6 @@
             }
         });
 
-        // Init
         updateLabels();
     </script>
 </body>
